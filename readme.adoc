@@ -1,0 +1,12 @@
+http://localhost:8080/students/ids
+http://localhost:8080/students/ids/101
+GET
+
+
+POST
+http://localhost:8080/students
+{"name":"srini12345",
+ "course":"b.tech"}
+
+DELETE
+http://localhost:8080/students/ids/101
