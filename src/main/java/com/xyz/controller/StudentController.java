@@ -37,7 +37,7 @@ public class StudentController {
     }
 
     @PostMapping
-    public String save(Student student) {
+    public String save(@RequestBody Student student) {
         LOGGER.info("#save student is called:"+student);
         Comparator<Student> comparator = Comparator.comparing( Student::getRollNo );
         Student maxObject = studentList.stream().max(comparator).get();
